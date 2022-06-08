@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Online Voting System - Edit Admin</title>
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <script></script>
+  </head>
+  <body>
+    <style>
+      #addressInput {
+        width: 30%;
+      }
+      #imgPart {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        width: 30%;
+        text-align: center;
+      }
+      #backBtn {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: navy;
+        color: white;
+        float: left;
+      }
+      #logoutBtn {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: navy;
+        color: white;
+        float: right;
+      }
+    </style>
+
+    <div id="headerSection">
+      <button id="backBtn" onclick="location.href='../php/view_admins.php'">
+        Back
+      </button>
+      <button id="logoutBtn" onclick="location.href='../php/login.php'">
+        Logout
+      </button>
+      <h1>Online Voting System</h1>
+    </div>
+
+    <hr />
+
+    <div id="bodySection">
+      <h2>Edit Admin</h2>
+      <br /><br />
+      <form
+        action="../php/admin_register.php"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input
+          type="text"
+          name="username"
+          id="firstNameInput"
+          placeholder="Enter username"
+        />
+        <input
+          type="password"
+          name="password"
+          id="passwprd"
+          placeholder="Enter password"
+        />
+        <br /><br />
+        <input
+          type="password"
+          id="confPassword"
+          name="confPassword"
+          placeholder="Confirm password"
+        />
+        <br /><br />
+
+        <center>
+          <div id="imgPart">
+            <input type="file" id="photoInput" name="photo" />
+          </div>
+        </center>
+
+        <button
+          id="btnRegister"
+          onclick="location.href='../php/edit_admin.php'"
+        >
+          Save
+        </button>
+      </form>
+
+      <br /><br />
+    </div>
+  </body>
+</html>

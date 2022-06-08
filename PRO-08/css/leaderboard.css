@@ -1,0 +1,86 @@
+body{
+    background-color:rgb(255, 255, 255)
+
+}
+.navbar {
+        overflow: hidden;
+        background-color: rgb(0, 26, 99); 
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .subnav {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .subnav .subnavbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .navbar a:hover, .subnav:hover .subnavbtn {
+        background-color: rgb(170, 170, 170);
+      }
+      
+      .subnav-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: rgb(132, 132, 139);
+        width: 100%;
+        z-index: 1;
+      }
+      
+      .subnav-content a {
+        float: left;
+        color: white;
+        text-decoration: none;
+      }
+      
+      .subnav-content a:hover {
+        background-color: #eee;
+        color: black;
+      }
+      
+      .subnav:hover .subnav-content {
+        display: block;
+      }
+  
+#count {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+    
+  #count tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #count tr:hover {background-color: #ddd;}
+  
+  #count td {
+    padding-top: 0px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(32, 34, 59);
+    color: white;
+  }

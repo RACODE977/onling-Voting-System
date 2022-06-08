@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Online Voting System - Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+  </head>
+  <body>
+    <style>
+      #competitorBtn {
+        background-color: navy;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        width: 30%;
+        border-radius: 5px;
+      }
+      #userBtn {
+        background-color: navy;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        width: 30%;
+        border-radius: 5px;
+      }
+      #judgerBtn {
+        background-color: navy;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        width: 30%;
+        border-radius: 5px;
+      }
+      #backBtn {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: navy;
+        color: white;
+        float: left;
+      }
+      #logoutBtn {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: navy;
+        color: white;
+        float: right;
+      }
+    </style>
+    <div id="headerSection">
+      <button id="logoutBtn" onclick="location.href='../html/index.html'">
+        Logout
+      </button>
+      <h1>Online Voting System</h1>
+    </div>
+    <hr />
+    <div id="bodySection">
+      <br /><br />
+      <a href="../php/view.php" id="competitorBtn">Competitors</a>
+      <br /><br />
+      <a href="../php/leaderboard.php" id="userBtn">Users</a>
+      <br /><br />
+      <a href="../php/RegDisplay.php" id="judgerBtn">Judgers</a>
+      <br /><br />
+      <a href="../php/view_admins.php" id="judgerBtn">Admins</a>
+    </div>
+  </body>
+</html>

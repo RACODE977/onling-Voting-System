@@ -1,0 +1,147 @@
+
+
+
+
+
+.content1{
+	margin-left: 10px;
+    width: 30%;
+    padding: 20px;
+    display: inline-block;
+    border: 1px solid rgb(5, 2, 2);
+    border-radius: 10px;
+    box-sizing: border-box;
+   
+  }
+  
+ 
+  .table1,th,td
+  {
+    
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   margin-top: 250px;
+    width: 100%;
+    border: 1px solid black; 
+    
+
+  }
+  .table1{
+    background-color: white;
+    text-size-adjust: 10px;
+  }
+ td{
+
+  padding: 10px 10px 0;
+  text-align: center;
+
+  
+}
+
+.content {
+  margin-top:-425px;
+	margin-left: 850px;
+    width: 40%;
+    padding: 20px;
+    display: inline-block;
+    border: 1px solid rgb(63, 3, 3);
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+ 
+  .form-group {
+    width: 100%;
+    
+   
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    
+  }
+  .form-control{
+
+    width: 100%;
+    background-color: #f4f4f4;
+    color: rgb(2, 1, 1);
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+  }
+
+  button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .contact{
+    text-align: center; 
+    margin-top: 100px; 
+  margin-left: 90px;
+  text-decoration: solid;
+  }
+
+ 
+  .img_1{
+    font-family:  small-caps;
+    margin-left: 90px;
+   
+  }
+  .Address img {
+    width: 2%;
+
+  }
+  .Address p{
+    font-family:  small-caps;
+    display: inline-block;
+  margin: 0 20px 0 20px;
+  }
+
+  .Email img {
+    width: 2%;
+
+  }
+  .Email p{
+    font-family:  small-caps;
+    display: inline-block;
+  margin: 0 20px 0 20px;
+  }
+  .phone img {
+    width: 2%;
+
+  }
+  .phone p{
+    font-family:  small-caps;
+    display: inline-block;
+  margin: 0 20px 0 20px;
+  }
+  .fixed-header img{
+    margin-bottom: -100px;
+   
+   }
+
+
+
+ 
+
+
+
+
+
+
+
+
+  

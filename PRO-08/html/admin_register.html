@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Online Voting System - Register Admin</title>
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <script></script>
+  </head>
+  <body>
+    <style>
+      #addressInput {
+        width: 30%;
+      }
+      #imgPart {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        width: 30%;
+        text-align: center;
+      }
+      #backBtn {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: navy;
+        color: white;
+        float: left;
+      }
+      #logoutBtn {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: navy;
+        color: white;
+        float: right;
+      }
+    </style>
+
+    <script>
+      function reset() {
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("confPassword").value = "";
+        document.getElementById("photoInput").value = "";
+      }
+    </script>
+
+    <div id="headerSection">
+      <button id="backBtn" onclick="location.href='../php/view_admins.php'">
+        Back
+      </button>
+      <button id="logoutBtn" onclick="location.href='../php/login.php'">
+        Logout
+      </button>
+      <h1>Online Voting System</h1>
+    </div>
+
+    <hr />
+
+    <div id="bodySection">
+      <h2>Register Admin</h2>
+      <br /><br />
+      <form
+        action="../php/admin_register.php"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter username"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+        />
+        <br /><br />
+        <input
+          type="password"
+          id="confPassword"
+          name="confPassword"
+          placeholder="Confirm password"
+        />
+        <br /><br />
+        <select type="text" id="type" name="type" placeholder="Select type">
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+        <br /><br />
+
+        <center>
+          <div id="imgPart">
+            <input type="file" id="photo" name="photo" />
+          </div>
+        </center>
+
+        <br /><br />
+        <button
+          id="btnRegister"
+          onclick="location.href='../php/admin_register.php'"
+        >
+          Register
+        </button>
+        <button id="btnRegister" onclick="reset()">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>

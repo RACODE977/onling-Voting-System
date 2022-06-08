@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>candidate page</title>
+        <link rel="stylesheet" href="../css/candidate.css">
+        
+    </head>
+   <body>
+    <script>
+        function reset() {
+          document.getElementById("firstName").value = "";
+          document.getElementById("lastName").value = "";
+          document.getElementById("nic").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("party").value = "";
+        }
+      </script>
+
+        <style>
+            #backBtn {
+                padding: 10px;
+                background-color: black;
+                color: white;
+                float: left;
+                width: 250px;
+                height: 50px;
+                border-color: white;
+            }
+            #logoutBtn {
+                padding: 10px;
+                background-color: black;
+                color: white;
+                float: right;
+                width: 250px;
+                height: 50px;
+                border-color: white;
+            }
+        </style>
+           
+        
+       <div  class="container">
+
+           <div class="title">Candidate Registation Form</div>
+           <form action="../php/register.php" method="POST" >
+               <div class="candidate-detail">
+                   <div class="input-box">
+                       <span class="details">First name</span> 
+                       <input type="text" placeholder="Enter your name" name="firstName" id="firstName" required``>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last name</span>
+                        <input type="text" placeholder="Enter your name" name="lastName" id="lastName"  required``>
+                     </div>
+                     <div class="input-box">
+                        <span class="details">NIC</span>
+                        <input type="text" placeholder="Enter your name" name="nic"  id="nic" required``>
+                     </div>
+                     <div class="input-box">
+                        <span class="details" id="text">Email</span>
+                        <input type="text" placeholder="Enter your name" name="email"  id="email"  required``>
+                     </div>
+                     <div class="input-box" >
+                        <span class="details">Competiton</span>
+                        <input type="text" placeholder="Enter your name" name="party" required``>
+                     </div>
+              </div>
+                <div class="button">
+                    <input type="submit">
+                </div>
+                <div class="button">
+                    <input type="button" onclick="reset()" value="RESET" >
+                </div>
+                <div>
+                    <button id="backBtn" onclick="location.href='../php/view.php'">Back</button>
+                    <button id="logoutBtn" onclick="location.href='../php/login.php'">Logout</button>
+                </div>
+            </form>
+          </div>
+         
+          
+   </html>

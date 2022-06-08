@@ -1,0 +1,56 @@
+body {
+  text-align: center;
+  background-color: royalblue;
+}
+
+#headerSection {
+  padding: 10px;
+}
+
+#headerSection h1 {
+  font-family: cursive;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#dropBox {
+  padding: 10px;
+  border-radius: 5px;
+  width: 15%;
+}
+
+#selectRole {
+  padding: 10px;
+  border-radius: 5px;
+  width: 15%;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: navy;
+  color: white;
+}
+
+#btnLogin {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: navy;
+  color: white;
+}
+
+#btnRegister {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: navy;
+  color: white;
+}
+
+#addressInput {
+  padding: 10px;
+  border-radius: 5px;
+  width: 30%;
+}
